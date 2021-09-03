@@ -1,0 +1,175 @@
+html {
+    font-size: 62.5%;
+}
+
+.margin-top {
+    margin-top: 15rem;
+}
+
+body {
+    background-color: black;
+}
+
+
+/* HEADER Y FOOTER */
+.nav-link--active {
+  color: white;
+}
+.nav-link--active:hover {
+  color: white;
+}
+.logo {
+    width: 12rem;
+}
+.container-fluid {
+    width: auto;
+}
+.botonNav {
+    width: 6rem;
+    height: 6rem;
+}
+.navbar {
+    position: fixed;
+    top: 0rem;
+    z-index: 998;
+    background-image: url(../Imagenes/fondosections.jpg);
+    height: 10rem;
+}
+h1 {
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+    font-family: 'Marck Script', cursive;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+footer {
+    background-image: url(../Imagenes/fondosections.jpg);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+nav {
+    width: 100%;
+}
+.breadcrumb {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.a-breadcrumb {
+    font-size: 2rem;
+    color: black;
+}
+.a-breadcrumb--active {
+    font-size: 2rem;
+    color: white;
+}
+.a-breadcrumb--active:hover {
+  color: white;
+}
+.a-breadcrumb:hover {
+    color: white;
+}
+.btn-footer {
+  width: 3rem;
+  height: 3rem;
+  margin: 2rem;
+}
+.contacto-footer {
+  text-align: center;
+}
+.footer-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+img, svg {
+  vertical-align: initial;
+}
+
+/* H2 Y H3 */
+h2 {
+    font-family: 'Marck Script', cursive;
+    font-size: 4rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: solid white 0.3rem;
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.h2s {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+/* LISTAS Y TABLAS */
+ul {
+    display: grid;
+    list-style-type: none;
+    margin: auto;
+}
+li {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+th {
+    border: solid black 0.3rem;
+    text-align: center;
+}
+td {
+    border: solid black 0.3rem;
+    text-align: center;
+}
+.entre-si__table {
+    font-family: 'Marck Script', cursive;
+    width: 70rem;
+    font-size: 1.8rem;
+    margin: 1rem;
+}
+.entre-si {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.entre-si__img {
+    margin: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .entre-si__img {
+        width: 25rem;
+    }
+    .entre-si__table {
+        font-size: 1.2rem;
+    }
+
+}
+@media (min-width:320px) and (max-width:600px) {
+    .titulosText {
+        font-family: 'Marck Script', cursive;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 255, 0.5);
+        text-align: center;
+        border: dashed black 0.3rem;
+        padding: 0.5rem;
+        width: 40rem;
+        margin: 1rem;
+    }
+}

@@ -1,0 +1,545 @@
+$fondosection: url(../Imagenes/fondosections.jpg);
+$fondocesped: url(../Imagenes/fondo3.jpeg);
+
+.gs-section {
+    background-image: $fondosection;
+    margin: 2rem;
+    border: solid black 0.5rem;
+    display: grid;
+    grid-template-areas:
+    "djokovic img"
+    "federer img"
+    "nadal img";
+    justify-items: center;
+    align-items: center;
+}
+.gs-section__img {
+    grid-area: img;
+    width: auto;
+    margin: 1rem;
+    border: solid black 0.2rem;
+}
+.h2-gs {
+    margin-top: 15rem;
+}
+.gs-section__djokovic {
+    grid-area: djokovic;
+    font-size: 2rem;
+    text-align: center;
+    background-image: $fondocesped;
+    background-size: cover;
+    width: 40rem;
+    margin: 1rem;
+    border: solid black 0.2rem;
+}
+.gs-section__federer {
+    @extend .gs-section__djokovic;
+    grid-area: federer;
+    
+}
+.gs-section__nadal {
+    @extend .gs-section__djokovic;
+    grid-area: nadal;
+}
+
+    //MASTERS 1000 //
+.m1000-section {
+    background-image: $fondosection;
+    margin: 2rem;
+    border: solid black 0.5rem;
+    display: grid;
+    grid-template-areas:
+    "img img img"
+    "djokovic federer nadal" ;
+    justify-items: center;
+    align-items: center;
+}
+.m1000-section__img {
+    grid-area: img;
+    width: 120rem;
+    margin: 1rem;
+    border: solid black 0.2rem;
+    background-color: black;
+}
+.m1000-section__djokovic {
+    grid-area: djokovic;
+    font-size: 2rem;
+    text-align: center;
+    background-image: $fondocesped;
+    background-size: cover;
+    width: 40rem;
+    margin: 1rem;
+    border: solid black 0.2rem;
+}
+.m1000-section__federer {
+    @extend .m1000-section__djokovic;
+    grid-area: federer;
+    
+}
+.m1000-section__nadal {
+    @extend .m1000-section__djokovic;
+    grid-area: nadal;
+    
+}
+
+    // OTROS TITULOS //
+.otros-section {
+    background-image: $fondosection;
+    margin: 2rem;
+    border: solid black 0.5rem;
+    display: grid;
+    grid-template-areas:
+    "img djokovic djokovic"
+    "img federer federer"
+    "img nadal nadal";
+    justify-items: center;
+    align-items: center;
+}
+.otros-section__img {
+    grid-area: img;
+    width: 120rem;
+    margin: 1rem;
+}
+.otros-section__djokovic {
+    grid-area: djokovic;
+    font-size: 2rem;
+    text-align: center;
+    background-image: $fondocesped;
+    background-size: cover;
+    width: 40rem;
+    margin: 1rem;
+    border: solid black 0.2rem;
+}
+.otros-section__federer {
+    @extend .otros-section__djokovic;
+    grid-area: federer;
+    
+}
+.otros-section__nadal {
+    @extend .otros-section__djokovic;
+    grid-area: nadal;
+}
+
+    /* Mobile Start */
+@media (min-width:320px) and (max-width:480px) {
+    .gs-section {
+        grid-template-areas:
+        "img"
+        "djokovic"
+        "federer"
+        "nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .gs-section__img {
+        width: 25rem;
+    }
+    .gs-section__djokovic{
+        width: 25rem;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .gs-section__federer{
+        width: 25rem;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .gs-section__nadal{
+        width: 25rem;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .m1000-section {
+        margin: 1rem;
+        grid-template-areas: 
+        "img"
+        "djokovic"
+        "federer"
+        "nadal";
+    }
+    .m1000-section__img {
+        width: 25rem;
+    }
+    .m1000-section__djokovic {
+        width: 25rem;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .m1000-section__federer {
+        width: 25rem;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .m1000-section__nadal {
+        width: 25rem;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .otros-section {
+        grid-template-areas:
+        "img"
+        "djokovic"
+        "federer"
+        "nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .otros-section__img {
+        width: 25rem;
+    }
+    .otros-section__djokovic {
+        width: 25rem;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .otros-section__federer {
+        width: 25rem;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+    .otros-section__nadal {
+        width: 25rem;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+}
+@media (min-width:480px) and (max-width:600px) {
+    .gs-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img"
+        "djokovic"
+        "federer"
+        "nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .gs-section__img {
+        width: 40rem;
+    }
+    .m1000-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img"
+        "djokovic"
+        "federer"
+        "nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .m1000-section__img {
+        width: 40rem;
+    }
+    .otros-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img"
+        "djokovic"
+        "federer"
+        "nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .otros-section__img {
+        width: 40rem;
+    }
+}
+    /* Mobile End */
+
+    /* Tablet Start */
+@media (min-width:600px) and (max-width:768px) {
+    .gs-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img"
+        "djokovic"
+        "federer"
+        "nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .gs-section__img {
+        width: 55rem;
+    }
+    .gs-section__djokovic {
+        width: 50rem;
+        font-size: 2.5rem;
+    }
+    .gs-section__federer {
+        width: 50rem;
+        font-size: 2.5rem;
+    }
+    .gs-section__nadal {
+        width: 50rem;
+        font-size: 2.5rem;
+    }
+    .m1000-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img"
+        "djokovic"
+        "federer"
+        "nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .m1000-section__img {
+        width: 55rem;
+    }
+    .m1000-section__djokovic {
+        width: 50rem;
+        font-size: 2.5rem;
+    }
+    .m1000-section__federer {
+        width: 50rem;
+        font-size: 2.5rem;
+    }
+    .m1000-section__nadal {
+        width: 50rem;
+        font-size: 2.5rem;
+    }
+    .otros-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img"
+        "djokovic"
+        "federer"
+        "nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .otros-section__img {
+        width: 55rem;
+    }
+    .otros-section__djokovic {
+        width: 50rem;
+        font-size: 2.5rem;
+    }
+    .otros-section__federer {
+        width: 50rem;
+        font-size: 2.5rem;
+    }
+    .otros-section__nadal {
+        width: 50rem;
+        font-size: 2.5rem;
+    }
+}
+    /* Tablet End */
+
+    /* Tablet vertical Start */
+@media (min-width:768px) and (max-width:1024px) {
+    .gs-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img img"
+        "djokovic federer"
+        "nadal nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .gs-section__img {
+        width: 70rem;
+    }
+    .gs-section__djokovic {
+        width: 35rem;
+        font-size: 1.8rem;
+    }
+    .gs-section__federer {
+        width: 35rem;
+        font-size: 1.8rem;
+    }
+    .gs-section__nadal {
+        width: 35rem;
+        font-size: 1.8rem;
+    }
+    .m1000-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img img"
+        "djokovic federer"
+        "nadal nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .m1000-section__img {
+        width: 70rem;
+    }
+    .m1000-section__djokovic {
+        width: 35rem;
+        font-size: 1.8rem;
+    }
+    .m1000-section__federer {
+        width: 35rem;
+        font-size: 1.8rem;
+    }
+    .m1000-section__nadal {
+        width: 35rem;
+        font-size: 1.8rem;
+    }
+    .otros-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img djokovic"
+        "federer nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .otros-section__img {
+        width: 35rem;
+    }
+    .otros-section__djokovic {
+        width: 35rem;
+        font-size: 1.8rem;
+    }
+    .otros-section__federer {
+        width: 35rem;
+        font-size: 1.8rem;
+    }
+    .otros-section__nadal {
+        width: 35rem;
+        font-size: 1.8rem;
+    }
+}
+    /* Tablet vertical End */
+
+    /* Panoramica Start */
+@media (min-width:1024px) and (max-width:1200px) {
+    .gs-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img img img"
+        "djokovic federer nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .gs-section__img {
+        width: 80rem;
+    }
+    .gs-section__djokovic {
+        width: 30rem;
+        font-size: 1.7rem;
+    }
+    .gs-section__federer {
+        width: 30rem;
+        font-size: 1.7rem;
+    }
+    .gs-section__nadal {
+        width: 30rem;
+        font-size: 1.7rem;
+    }
+    .m1000-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img img img"
+        "djokovic federer nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .m1000-section__img {
+        width: 80rem;
+    }
+    .m1000-section__djokovic {
+        width: 30rem;
+        font-size: 1.7rem;
+    }
+    .m1000-section__federer {
+        width: 30rem;
+        font-size: 1.7rem;
+    }
+    .m1000-section__nadal {
+        width: 30rem;
+        font-size: 1.7rem;
+    }
+    .otros-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img djokovic"
+        "federer nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .otros-section__img {
+        width: 50rem;
+    }
+}
+    /* Panoramica End */
+
+    /* 1200px-1500px Start */
+@media (min-width:1200px) and (max-width:1500px) {
+    .gs-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img img img"
+        "djokovic federer nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .gs-section__img {
+        width: 100rem;
+    }
+    .gs-section__djokovic {
+        width: 35rem;
+    }
+    .gs-section__federer {
+        width: 35rem;
+    }
+    .gs-section__nadal {
+        width: 35rem;
+    }
+    .m1000-section {
+        margin: 1rem;
+        border: solid black 0.5rem;
+        grid-template-areas:
+        "img img img"
+        "djokovic federer nadal";
+        justify-items: center;
+        align-items: center;
+    }
+    .m1000-section__img {
+        width: 100rem;
+    }
+    .m1000-section__djokovic {
+        width: 35rem;
+    }
+    .m1000-section__federer {
+        width: 35rem;
+    }
+    .m1000-section__nadal {
+        width: 35rem;
+    }
+    .otros-section {
+        grid-template-areas:
+        "img djokovic"
+        "federer nadal";
+    }
+    .otros-section__img {
+        width: 60rem;
+    }
+}
+        /* 1200px-1500px End */
+    
+        /* 1500px-1800px Start */        
+@media (min-width:1501px) and (max-width:1800px) {
+    .gs-section__img {
+        width: 100rem;
+    }
+    .otros-section__img {
+        width: 100rem;
+    }
+}
+    /* 1500px-1800px End */ 

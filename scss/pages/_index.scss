@@ -1,0 +1,261 @@
+$fondocesped: url(../Imagenes/fondo3.jpeg);
+$fondosection: url(../Imagenes/fondosections.jpg);
+$section: index;
+
+@mixin sizes ($width, $height){
+  width: $width;
+  height: $height;
+}
+    /* INDEX */
+
+.acerca-de-nosotros-text {
+  font-size: 2rem + 1;
+}
+
+/* Carrusel */
+.carousel-index {
+  margin: auto;
+  margin-top: 15rem;
+  width: 130rem * 1;
+  height: auto;
+  padding: 2rem;
+  background-color: rgba(0, 175, 239, 0.4);
+  animation-name: carousel;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+.carousel-control-prev , .carousel-control-next {
+  background-color: rgba(255, 255, 255, 0.550);
+}
+
+@keyframes carousel {
+  25% {
+    background-color: rgba(0, 175, 239, 0.4);
+  }
+  50% {
+    background-color: rgba(0, 175, 239, 0.3);
+  }
+  75% {
+    background-color: rgba(0, 175, 239, 0.2);
+  }
+  100% {
+    background-color: rgba(0, 175, 239, 0.1);
+  }
+}
+
+
+/* Presentación de secciones Start */
+.section-index {
+  display: grid;
+  grid-template-areas: "titulos galeria entresi";
+  margin: 1rem;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+.section-index__titulos {
+    @if $section == index {
+        background-image: $fondosection
+    } @else {
+        background-image: $fondocesped;
+    }
+  grid-area: titulos;
+  border: solid black 0.5rem;
+  padding: 4rem;
+  margin: 1rem;
+  @include sizes(auto, 57rem);
+  animation-name: section;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.section-index__titulos:hover {
+    background-image: $fondocesped;
+    opacity: 0.7;
+}
+.section-index__img {
+  height: 35rem;
+  margin-top: 2rem;
+}
+.section-index__galeria {
+    @if $section == index {
+        background-image: $fondosection
+    } @else {
+        background-image: $fondocesped;
+    }
+  grid-area: galeria;
+  border: solid black 0.5rem;
+  padding: 2rem;
+  margin: 1rem;
+  @include sizes(auto, 57rem);
+  animation-name: section;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.section-index__galeria:hover {
+    background-image: $fondocesped;
+    opacity: 0.7;
+}
+.section-index__entresi {
+    @if $section == index {
+        background-image: $fondosection
+    } @else {
+        background-image: $fondocesped;
+    }
+  grid-area: entresi;
+  border: solid black 0.3rem;
+  padding: 5rem;
+  margin: 1rem;
+  @include sizes(auto, 57rem);
+  animation-name: section;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.section-index__entresi:hover {
+    background-image: $fondocesped;
+    opacity: 0.7;
+}
+.section-index__text {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: black;
+}
+.card {
+  width: 100% - 40;
+  margin: auto;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.h3-index {
+  font-size: 3rem;
+  color: black;
+  margin: 2rem;
+  border-bottom: solid black 0.2rem;
+}
+
+@keyframes section {
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Index Mobile Start */
+@media (min-width: 320px) and (max-width: 480px) {
+  .carousel-index {
+    width: 30rem;
+    padding: 1rem;
+  }
+  .section-index {
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "titulos"
+    "galeria"
+    "entresi";
+    margin: 1rem;
+  }
+  .section-index__img {
+    height: 20rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  .card {
+    width: 90%;
+  }
+}
+@media (min-width: 480px) and (max-width: 600px) {
+  .carousel-index {
+    width: 45rem;
+    padding: 2rem;
+  }
+  .section-index {
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "titulos"
+    "galeria"
+    "entresi";
+    margin: 1rem;
+  }
+  .section-index__img {
+    height: 25rem;
+  }
+  footer p {
+    font-size: 1rem;
+  }
+  .card {
+    width: 90%;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  .carousel-index {
+    width: 55rem;
+    padding: 2rem;
+  }
+  .section-index {
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "titulos"
+    "galeria"
+    "entresi";
+    margin: 1rem;
+  }
+  .section-index__img {
+    height: 25rem;
+  }
+  .card {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .text-carousel {
+    display: none;
+  }
+  .section-index {
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "titulos"
+    "galeria"
+    "entresi";
+    margin: 1rem;
+  }
+  .carousel-index {
+    margin: auto;
+    margin-top: 15rem;
+    width: 70rem;
+  }
+  .card {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .text-carousel {
+    display: none;
+  }
+  .section-index__img {
+    height: 25rem;
+  }
+  .carousel-index {
+    width: 95rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .carousel-index {
+    width: 110rem;
+  }
+}
+@media (max-width:1200px) {
+  .section-index__titulos, .section-index__galeria, .section-index__entresi, .navbar {
+    height: auto;
+  }
+}
