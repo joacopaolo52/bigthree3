@@ -1050,3 +1050,164 @@ h6 a:hover {
 .container {
   margin-bottom: 10rem;
 }
+
+/* CONTACTO */
+
+.btn-contacto {
+  border-radius: 10rem;
+  padding: 2rem;
+  border: black solid 0.2rem;
+  margin: 1rem;
+}
+
+.btn-wsp {
+  background-color: #25D366;
+}
+.btn-ig {
+  background-color: #3f729b;
+}
+.btn-fb {
+  background-color: #3b5998;
+}
+.btn-tw {
+  background-color: #00acee;
+}
+
+.contact-out {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.padreForm {
+  background-image: url(../Imagenes/fondosections.jpg);
+  background-size: cover;
+  border: solid white 0.2rem;
+  width: 130rem;
+  display: grid;
+  margin: auto;
+  grid-template-areas:
+  "a b img"
+  "c d img"
+  "e e img"
+  "f g img";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.hijosForm {
+  width: 25rem;
+  height: 4rem;
+  margin: 1rem;
+  outline: none;
+  border: none;
+  background-color: inherit;
+  border-bottom: solid black 0.3rem;
+}
+
+.hijosFormButton {
+  width: 25rem;
+  height: 4rem;
+  margin: 1rem;
+  background-color: white;
+  border: solid black 0.3rem;
+}
+
+.hijosFormButton:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
+}
+.g {
+  grid-area: g;
+}
+.imgForm {
+  grid-area: img;
+}
+::placeholder {
+  color: black;
+  font-size: 1.5rem;
+}
+input {
+  font-size: 1.5rem;
+  transition: all 1s;
+}
+input:focus {
+  width: 27rem;
+  font-size: 1.7rem;
+  caret-color: blue;
+}
+
+@media (min-width:320px) and (max-width:600px){
+  .padreForm {
+      width: 80%;
+      height: 100rem;
+      margin: auto;
+      justify-items: center;
+      align-items: center;
+      grid-template-areas: 
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "img";
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+  }
+  .hijosForm {
+      width: 20rem;
+      height: 3rem;
+      margin: 0.5rem;
+  }
+  form div img {
+      width: 100%;
+  }
+  .hijosFormButton {
+    width: 22rem;
+  }
+}
+
+@media (min-width:600px) and (max-width:1300px) {
+  .imgForm {
+    display: none;
+  }
+  .padreForm {
+    width: auto;
+    display: grid;
+    margin: auto;
+    grid-template-areas:
+    "a b"
+    "c d"
+    "e e"
+    "f g";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
