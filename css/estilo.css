@@ -49,6 +49,7 @@ h1 {
     margin-bottom: 2rem;
     color: white;
     text-shadow: 0 5px 10px white;
+    font-family: 'Anton', sans-serif;
 }
 
 footer {
@@ -114,6 +115,7 @@ h2 {
     display: inline-block;
     margin: 1rem;
     padding: 0.5rem;
+    font-family: 'Anton', sans-serif;
 }
 .h2s {
     display: flex;
@@ -123,6 +125,7 @@ h2 {
 h3 {
     text-align: center;
     font-size: 3rem;
+    font-family: 'Anton', sans-serif;
 }
 
 /* LISTAS Y TABLAS */
@@ -209,6 +212,7 @@ td {
   text-align: center;
   margin-top: 7rem;
   margin-bottom: 7rem;
+  font-family: 'Open Sans', sans-serif;
 }
 .section-index__titulos {
   grid-area: titulos;
@@ -270,6 +274,7 @@ td {
   text-align: center;
   background-color: black;
   color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 .h3-index {
   font-size: 3rem;
@@ -457,6 +462,7 @@ td {
   text-align: center;
   font-size: 1.5rem;
   color: black;
+  font-family: 'Open Sans', sans-serif;
 }
 .modal-otros {
   background-color: rgba(128, 128, 128, 0.685);
@@ -512,14 +518,6 @@ h6 {
       height: 20rem;
     }
 }
-
-
-
-
-
-
-
-
 
 /* ********************************************************************************************************************************************************************************* */
     /* GALERÍA */
@@ -634,6 +632,7 @@ h6 {
   line-height: 20px;
   overflow: hidden;
   text-align: justify;
+  font-family: 'Open Sans', sans-serif;
 }
 .img-fluid {
   border-radius: 2rem;
