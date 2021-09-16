@@ -1,4 +1,4 @@
-![](https://lh3.googleusercontent.com/bFPDfh92kvFv9HGkQj7i0Qg1HjnQ_OOsSC9qS6IgqgN55vSAoLAMMTX36jZwGRdd33iyaw=s170)
+![](https://joacopaolo52.github.io/bigthree3/imagenes/logo.png)
 
 # Big Three :tennis:
 
