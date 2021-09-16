@@ -6,8 +6,6 @@ html {
     padding: 0;
 }
 
-/* font-family: 'Marck Script', cursive; */
-
 .margin-top {
     margin-top: 12rem;
 }
@@ -151,6 +149,7 @@ td {
     width: 70rem;
     font-size: 1.8rem;
     margin: 1rem;
+    box-shadow: 1px 1px 12px 12px whitesmoke;
 }
 .entre-si {
     display: flex;
@@ -217,17 +216,16 @@ td {
 .section-index__titulos {
   grid-area: titulos;
   background-image: url(../imagenes/fondosections.jpg);
-  border: solid black 0.5rem;
+  border: solid black 0.2rem;
   padding: 4rem;
   margin: 1rem;
+  margin-top: 2rem;
   height: 57rem;
-  animation-name: section;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
+  opacity: 0.8;
 }
 .section-index__titulos:hover {
-    background-image: url(../imagenes/fondo3.jpeg);
-    opacity: 0.7;
+  opacity: 1;
+  box-shadow: 1px 1px 12px 12px rgba(245, 245, 245, 0.568);
 }
 .section-index__img {
   height: 35rem;
@@ -236,17 +234,16 @@ td {
 .section-index__galeria {
   grid-area: galeria;
   background-image: url(../imagenes/fondosections.jpg);
-  border: solid black 0.5rem;
+  border: solid black 0.2rem;
   padding: 2rem;
   margin: 1rem;
+  margin-top: 2rem;
   height: 57rem;
-  animation-name: section;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
+  opacity: 0.8;
 }
 .section-index__galeria:hover {
-    background-image: url(../imagenes/fondo3.jpeg);
-    opacity: 0.7;
+  opacity: 1;
+  box-shadow: 1px 1px 12px 12px rgba(245, 245, 245, 0.568);
 }
 .section-index__entresi {
   grid-area: entresi;
@@ -254,14 +251,13 @@ td {
   border: solid black 0.3rem;
   padding: 5rem;
   margin: 1rem;
+  margin-top: 2rem;
   height: 57rem;
-  animation-name: section;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
+  opacity: 0.8;
 }
 .section-index__entresi:hover {
-    background-image: url(../imagenes/fondo3.jpeg);
-    opacity: 0.7;
+  opacity: 1;
+  box-shadow: 1px 1px 12px 12px rgba(245, 245, 245, 0.568);
 }
 .section-index__text {
   font-size: 1.8rem;
@@ -281,21 +277,6 @@ td {
   color: black;
   margin: 2rem;
   border-bottom: solid black 0.2rem;
-}
-
-@keyframes section {
-  25% {
-    transform: scale(0.9);
-  }
-  50% {
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 /* Index Mobile Start */
@@ -638,24 +619,10 @@ h6 {
   border-radius: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  animation-name: imgnoticias;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-duration: 8s;
+  transition: all 1s;
 }
-@keyframes imgnoticias {
-  25% {
-    transform: scale(0.9);
-  }
-  50% {
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(0.9);
-  }
-  100% {
-    transform: scale(1);
-  }
+.img-fluid:hover {
+  transform: scale(1.1);
 }
 h6 {
   text-align: center;
